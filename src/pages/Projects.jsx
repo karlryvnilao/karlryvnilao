@@ -17,7 +17,7 @@ const Projects = () => {
       <h2>Projects</h2>
       <p>Projects is the best practices to enhace your skills and to broad knowledge.</p>
       <div className="context" id="context1">
-        <a href="https://tesdawebsiteforcss.000webhostapp.com/"><img src="src/images/Projects/Tesda.png" alt="Image 1" className="context-image"/></a>
+        <a href="https://tesdawebsiteforcss.000webhostapp.com/"><img src="/images/Projects/Tesda.png" alt="Image 1" className="context-image"/></a>
         <div className="context-text">
           <h3>Tesda Management</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -29,11 +29,11 @@ const Projects = () => {
           <h3>Mental Health Management</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-        <a href="https://canossasstudentmentalhealthsupportsystem.000webhostapp.com/"><img src="src/images/Projects/Mental.png" alt="Image 2" className="context-image"/></a>
+        <a href="https://canossasstudentmentalhealthsupportsystem.000webhostapp.com/"><img src="/images/Projects/Mental.png" alt="Image 2" className="context-image"/></a>
       </div>
 
       <div className="context" id="context3">
-        <a href="https://reservationforub.000webhostapp.com/"><img src="src/images/Projects/Reservation.png" alt="Image 3" className="context-image"/></a>
+        <a href="https://reservationforub.000webhostapp.com/"><img src="/images/Projects/Reservation.png" alt="Image 3" className="context-image"/></a>
         <div className="context-text">
           <h3>Reservation System</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
