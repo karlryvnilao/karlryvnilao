@@ -1,8 +1,9 @@
 import React from 'react';
 
+
 function About() {
   const handleDownload = () => {
-    const cvUrl = 'src/file/KARL_ILAO_RESUME.pdf';
+    const cvUrl = '/KARL_ILAO_RESUME.pdf';
     const link = document.createElement('a');
     link.href = cvUrl;
     link.target = '_blank';
@@ -15,7 +16,7 @@ function About() {
       <div className="about-content">
         <div className="profile-image">
           <img
-            src="src\images\karl.png"
+          src="/images/karl.png"
             alt="Karl Ilao Profile"
             className="profile-image"
           />

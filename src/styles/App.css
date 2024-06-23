@@ -108,7 +108,7 @@
 
 .footer .logo {
   height: 50px; /* Adjust size as needed */
-  background-image: url('/src/images/karl2.png'); /* Adjust the path as needed */
+  background-image: url('/images/karl2.png'); /* Adjust the path as needed */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -117,7 +117,7 @@
 .navbar .logo {
   width: 60px; /* Adjust size as needed */
   height: 50px; /* Adjust size as needed */
-  background-image: url('/src/images/karl2.png'); /* Adjust the path as needed */
+  background-image: url('/images/karl2.png'); /* Adjust the path as needed */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

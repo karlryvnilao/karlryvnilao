@@ -112,7 +112,7 @@ button.download-button {
 
 .footer .logo {
   height: 50px; /* Adjust size as needed */
-  background-image: url('/src/images/karl1.png'); /* Adjust the path as needed */
+  background-image: url('/images/karl1.png'); /* Adjust the path as needed */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -121,7 +121,7 @@ button.download-button {
 .navbar .logo {
   width: 60px; /* Adjust size as needed */
   height: 50px; /* Adjust size as needed */
-  background-image: url('/src/images/karl1.png'); /* Adjust the path as needed */
+  background-image: url('/images/karl1.png'); /* Adjust the path as needed */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
