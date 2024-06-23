@@ -6,7 +6,6 @@ import Projects from './pages/Projects';
 import Tooling from './pages/Tooling';
 import Training from './pages/Trainings';
 
-const basename = process.env.NODE_ENV === 'production' ? '/<Portfolio>' : '/';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -16,8 +15,7 @@ const router = createBrowserRouter(
       <Route path="tooling" element={<Tooling />} />
       <Route path="training" element={<Training />} />
     </Route>
-  ),
-  { basename }
+  )
 );
 
 const App = () => {
