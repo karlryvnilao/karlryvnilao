@@ -1,10 +1,12 @@
 import React from 'react';
-import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom';
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import RootLayout from './layout/RootLayout';
-import About from './pages/About';  // Use relative paths
-import Projects from './pages/Projects';  // Use relative paths
-import Tooling from './pages/Tooling';  // Use relative paths
-import Training from './pages/Trainings';  // Use relative paths
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Tooling from './pages/Tooling';
+import Training from './pages/Trainings';
+
+const basename = process.env.NODE_ENV === 'production' ? '/<Portfolio>' : '/';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -14,7 +16,8 @@ const router = createBrowserRouter(
       <Route path="tooling" element={<Tooling />} />
       <Route path="training" element={<Training />} />
     </Route>
-  )
+  ),
+  { basename }
 );
 
 const App = () => {
