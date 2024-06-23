@@ -26,13 +26,11 @@ function Training() {
 
   return (
     <div className='Trainings'>
-    <header className='portfolio-header'>
-          <h1>Trainings and Seminars</h1>
-          <span className=''>I actively participate in a variety of trainings and seminars to continuously
+          <h2>Trainings and Seminars</h2>
+          <p>I actively participate in a variety of trainings and seminars to continuously
             enhance my skills and stay updated with industry trends. These learning experiences
             have been invaluable in my professional growth and have equipped me with the knowledge
-            and expertise to excel in my field.</span>
-      </header>
+            and expertise to excel in my field.</p>
     
     </div>
   );

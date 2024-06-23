@@ -2,7 +2,7 @@ import React from 'react';
 
 function About() {
   const handleDownload = () => {
-    const cvUrl = 'src\file\Karl Reyven A. Ilao Resume .pdf';
+    const cvUrl = 'src/file/KARL_ILAO_RESUME.pdf';
     const link = document.createElement('a');
     link.href = cvUrl;
     link.target = '_blank';

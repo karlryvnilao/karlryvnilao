@@ -16,11 +16,12 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.1",
     "font-awesome": "^4.7.0",
+    "gsap": "^3.12.5",
     "jquery": "^3.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router": "^6.16.0",
-    "react-router-dom": "^6.16.0",
+    "react-router-dom": "^6.23.1",
     "react-spinners": "^0.13.8",
     "react-vertical-timeline-component": "^3.6.0"
   },

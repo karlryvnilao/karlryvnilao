@@ -1,11 +1,18 @@
 /* Navbar.css */
 
 .navbar {
-  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: transparent; /* Replace with your desired background color */
+  z-index: 1000; /* Adjust as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for depth */
+  transition: background-color 0.3s ease; /* Optional: Smooth background color transition */
 }
 
 .menu-button {
@@ -99,7 +106,15 @@
   /* You can also specify a max-width to prevent the logo from exceeding a certain size */
 }
 
-.logo {
+.footer .logo {
+  height: 50px; /* Adjust size as needed */
+  background-image: url('/src/images/karl2.png'); /* Adjust the path as needed */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navbar .logo {
   width: 60px; /* Adjust size as needed */
   height: 50px; /* Adjust size as needed */
   background-image: url('/src/images/karl2.png'); /* Adjust the path as needed */
@@ -117,6 +132,8 @@
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
+  margin-top: 80px;
+  height: 90vh;
 }
 
 .about-content {
@@ -481,51 +498,6 @@ span{
 
 /*Portfolio*/
 
-/* variables - colors */
-$main-text: #7f8c97;
-$link: #acb7c0;
-$background: #e9f0f5;
-$color-1: #303e49;
-$color-2: #c03b44;
-$color-3: #ffffff;
-$color-4: #75ce66;
-$color-5: #f0ca45;
-
-/* variables - fonts */
-$primary-font: 'Droid Serif', serif;
-$secondary-font: 'Open Sans', sans-serif;
-
-/* mixins - rem fallback */
-@function calculateRem($size) {
-  $remSize: $size / 16px;
-  @return $remSize * 1rem;
-}
-
-@mixin font-size($size) {
-  font-size: $size;
-  font-size: calculateRem($size);
-}
-
-/* mixins - border radius */
-@mixin border-radius($radius: .25em) {
-  border-radius: $radius;
-}
-
-/* layout - breakpoints */
-$S: 320px;
-$M: 768px;
-$L: 1170px;
-
-/* layout - media queries */
-@mixin MQ($canvas) {
-  @if $canvas == S {
-    @media only screen and (min-width: $S) { @content; }
-  } @else if $canvas == M {
-    @media only screen and (min-width: $M) { @content; }
-  } @else if $canvas == L {
-    @media only screen and (min-width: $L) { @content; }
-  }
-}
 
 /* Primary style */
 html * {
@@ -537,9 +509,9 @@ html * {
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+/* @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200'); */
 
-body  {
+/* body  {
     background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
   background-size:cover;
         -webkit-animation: slidein 100s;
@@ -553,9 +525,9 @@ body  {
 
         -webkit-animation-direction: alternate;
         animation-direction: alternate;              
-}
+} */
 
-@-webkit-keyframes slidein {
+/* @-webkit-keyframes slidein {
 from {background-position: top; background-size:3000px; }
 to {background-position: -100px 0px;background-size:2750px;}
 }
@@ -564,13 +536,19 @@ to {background-position: -100px 0px;background-size:2750px;}
 from {background-position: top;background-size:3000px; }
 to {background-position: -100px 0px;background-size:2750px;}
 
-}
+} */
 
 .Trainings {
-  background-color: #b3b3b3;
-  height: 200px;
+  background-color: #ffffff;
+  padding: 20px;
+  height: 250px;
 }
 
+.Trainings h2,p {
+  margin-top: 37px;
+  color: #000;
+  text-align: center;
+}
 a {
   color: #acb7c0;
   text-decoration: none;
@@ -932,5 +910,192 @@ header h1 {
   font-family: monospace;
   font-size: 13px;
 }
+p {
+    color: black;
+}
 
-/*Cube*/
+/*Projects*/
+.projects {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.context {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.image-left {
+  flex-direction: row;
+}
+
+.context-image {
+  width: 400px;
+  height: auto;
+  margin: 0 20px;
+}
+
+.context-text {
+  max-width: 600px;
+}
+
+.context-text h3 {
+  font-size: 25px;
+  color: #000;
+  text-align: center;
+}
+
+.projects h2 {
+  color: #000;
+  text-align: center;
+  font-family: monospace;
+  font-size: 40px;
+}
+
+/*Background-animation*/
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure it's behind other content */
+}
+.container-fluid{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #FFF;
+}
+/* ============= Animation background ========= */
+.background {
+  background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  padding:0;
+  margin:0px;
+}
+.cube {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px #D7D4E4;
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  animation: cube 12s ease-in forwards infinite;
+}
+.cube:nth-child(2n) {
+  border-color: #FFF ;
+}
+.cube:nth-child(2) {
+  animation-delay: 2s;
+  left: 25vw;
+  top: 40vh;
+}
+.cube:nth-child(3) {
+  animation-delay: 4s;
+  left: 75vw;
+  top: 50vh;
+}
+.cube:nth-child(4) {
+  animation-delay: 6s;
+  left: 90vw;
+  top: 10vh;
+}
+.cube:nth-child(5) {
+  animation-delay: 8s;
+  left: 10vw;
+  top: 85vh;
+}
+.cube:nth-child(6) {
+  animation-delay: 10s;
+  left: 50vw;
+  top: 10vh;
+}
+/* ================= Header ============ */
+
+/* Logo */
+.logo span{
+  color: #591BC5;
+  font-size: 2em;
+  line-height: 1.4;
+  padding-left: 5px;
+  font-weight: bold;
+}
+/* Header content & title & button*/
+.header-content{
+  margin-top:25%;
+  text-align: center;
+  color:  #EFEEF5;
+}
+.header-content h1{
+  text-transform: uppercase;
+  font-size: 3em;
+  letter-spacing: 1px;
+}
+.header-content p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 20px auto;
+}
+.header-content button{
+  width: 140px;
+  margin:20px 10px;
+  color: #591BC5;
+  font-size: 17px;
+  border:1px solid #EFEEF5;
+  font-weight: 500;
+  background: #EFEEF5;
+  border-radius: 20px;
+  padding: 10px;
+  cursor:pointer;
+  transition: .3s;
+}
+.header-content button:hover{
+  border-radius: 0;
+}
+/* Animate Background*/
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+
+/*stick light*/
+svg.svg-inline--fa.fa-moon {
+  height: 40px;
+  color: black;
+}
+
+button.download-button {
+  color: #000;
+}

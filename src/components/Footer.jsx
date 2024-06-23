@@ -4,7 +4,6 @@ function Footer() {
   return (
     <footer className="footer">
     <div className="logo">
-      <img src="src\images\logo.png" alt="Logo" className='footer-logo'/>
     </div>
     <div className="social-logos">
       {/* Add your social media logos here */}

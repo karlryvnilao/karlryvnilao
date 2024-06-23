@@ -10,7 +10,7 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="logo"></div> {/* No more <img> tag */}
+      <div className="logo"></div>
       <div className="menu-button" onClick={toggleMenu}>
         <div className={`bar ${isOpen ? 'open' : ''}`}></div>
         <div className={`bar ${isOpen ? 'open' : ''}`}></div>
@@ -29,7 +29,9 @@ function Navbar() {
         <li className="nav-item">
           <Link to="/services">Services</Link>
         </li>
-        {/* Add more navigation links as needed */}
+        <li className="nav-item">
+          <Link to="/training">Training</Link>
+        </li>
       </ul>
     </nav>
   );

@@ -16,7 +16,7 @@ function Tooling() {
     <img src="src\images\Tooling\javascript.png" alt="Picture 3"></img>
     </div>
     <div className='picture'>
-    <img src="src\images\Tooling\python.png" alt="Picture 4"></img>
+    <img src="src\images\Tooling\c-sharp.svg" alt="Picture 4"></img>
     </div>
     <div className='picture'>
     <img src="src\images\Tooling\react.png" alt="Picture 5"></img>
