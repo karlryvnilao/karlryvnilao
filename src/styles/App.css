@@ -87,6 +87,10 @@
 }
 
 
+button.download-button {
+  color: white;
+}
+
 
 
 
@@ -169,6 +173,7 @@
 
 .bio {
   margin-bottom: 20px;
+  color: #000;
 }
 
 .download-button {
@@ -538,14 +543,14 @@ to {background-position: -100px 0px;background-size:2750px;}
 } */
 
 .Trainings {
-  background-color: #ffffff;
+  background-color: #000;
   padding: 20px;
   height: 250px;
 }
 
 .Trainings h2,p {
   margin-top: 37px;
-  color: #000;
+  color: #fff;
   text-align: center;
 }
 a {
@@ -722,14 +727,14 @@ header h1 {
 .cd-timeline-content {
   position: relative;
   margin-left: 60px;
-  background: #ffffff;
+  background: #000;
   border-radius: 0.25em;
   padding: 1em;
   box-shadow: 0 3px 0 rgba(233, 240, 245, 0.95);
 }
 
 .cd-timeline-content h2 {
-  color: #303e49;
+  color: #fff;
 }
 
 .cd-timeline-content p,
@@ -909,13 +914,12 @@ header h1 {
   font-family: monospace;
   font-size: 13px;
 }
-p {
-    color: black;
-}
+
+
 
 /*Projects*/
 .projects {
-  background-color: white;
+  background-color: #000;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -944,12 +948,12 @@ p {
 
 .context-text h3 {
   font-size: 25px;
-  color: #000;
+  color: #fff;
   text-align: center;
 }
 
 .projects h2 {
-  color: #000;
+  color: #fff;
   text-align: center;
   font-family: monospace;
   font-size: 40px;
@@ -974,7 +978,7 @@ p {
 }
 /* ============= Animation background ========= */
 .background {
-  background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+  background: linear-gradient(132deg, #dddddd, #ffffff, #bebebe);
   background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
   position: relative;
@@ -990,13 +994,13 @@ p {
   left: 45vw;
   width: 10px;
   height: 10px;
-  border: solid 1px #D7D4E4;
+  border: solid 1px #000000;
   transform-origin: top left;
   transform: scale(0) rotate(0deg) translate(-50%, -50%);
   animation: cube 12s ease-in forwards infinite;
 }
 .cube:nth-child(2n) {
-  border-color: #FFF ;
+  border-color: #000000 ;
 }
 .cube:nth-child(2) {
   animation-delay: 2s;
@@ -1023,48 +1027,6 @@ p {
   left: 50vw;
   top: 10vh;
 }
-/* ================= Header ============ */
-
-/* Logo */
-.logo span{
-  color: #591BC5;
-  font-size: 2em;
-  line-height: 1.4;
-  padding-left: 5px;
-  font-weight: bold;
-}
-/* Header content & title & button*/
-.header-content{
-  margin-top:25%;
-  text-align: center;
-  color:  #EFEEF5;
-}
-.header-content h1{
-  text-transform: uppercase;
-  font-size: 3em;
-  letter-spacing: 1px;
-}
-.header-content p {
-  font-size: 20px;
-  line-height: 1.5;
-  margin: 20px auto;
-}
-.header-content button{
-  width: 140px;
-  margin:20px 10px;
-  color: #591BC5;
-  font-size: 17px;
-  border:1px solid #EFEEF5;
-  font-weight: 500;
-  background: #EFEEF5;
-  border-radius: 20px;
-  padding: 10px;
-  cursor:pointer;
-  transition: .3s;
-}
-.header-content button:hover{
-  border-radius: 0;
-}
 /* Animate Background*/
 @keyframes Gradient {
   0% {
@@ -1088,11 +1050,9 @@ p {
   }
 }
 
-
-/*stick light*/
 svg.svg-inline--fa.fa-moon {
   height: 40px;
-  color: black;
+  color: rgb(102, 102, 0);
 }
 
 button.download-button {

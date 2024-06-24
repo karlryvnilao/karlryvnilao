@@ -87,10 +87,6 @@
 }
 
 
-button.download-button {
-  color: white;
-}
-
 
 
 
@@ -371,7 +367,7 @@ span{
 }
 .tooling h2{
   color: #fff;
-  text-align: center;
+  text-align: center; 
   margin-bottom: 2rem;
   font-family: monospace;
   font-size: 40px;
@@ -542,14 +538,14 @@ to {background-position: -100px 0px;background-size:2750px;}
 } */
 
 .Trainings {
-  background-color: #000;
+  background-color: #ffffff;
   padding: 20px;
   height: 250px;
 }
 
 .Trainings h2,p {
   margin-top: 37px;
-  color: #fff;
+  color: #000;
   text-align: center;
 }
 a {
@@ -726,14 +722,14 @@ header h1 {
 .cd-timeline-content {
   position: relative;
   margin-left: 60px;
-  background: #000;
+  background: #ffffff;
   border-radius: 0.25em;
   padding: 1em;
   box-shadow: 0 3px 0 rgba(233, 240, 245, 0.95);
 }
 
 .cd-timeline-content h2 {
-  color: #fff;
+  color: #303e49;
 }
 
 .cd-timeline-content p,
@@ -913,12 +909,13 @@ header h1 {
   font-family: monospace;
   font-size: 13px;
 }
-
-
+.bio {
+  color: #fff;
+}
 
 /*Projects*/
 .projects {
-  background-color: #000;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -947,12 +944,12 @@ header h1 {
 
 .context-text h3 {
   font-size: 25px;
-  color: #fff;
+  color: #000;
   text-align: center;
 }
 
 .projects h2 {
-  color: #fff;
+  color: #000;
   text-align: center;
   font-family: monospace;
   font-size: 40px;
@@ -977,7 +974,7 @@ header h1 {
 }
 /* ============= Animation background ========= */
 .background {
-  background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+  background: linear-gradient(132deg, #303030, #000000, #2f3036);
   background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
   position: relative;
@@ -1028,46 +1025,6 @@ header h1 {
 }
 /* ================= Header ============ */
 
-/* Logo */
-.logo span{
-  color: #591BC5;
-  font-size: 2em;
-  line-height: 1.4;
-  padding-left: 5px;
-  font-weight: bold;
-}
-/* Header content & title & button*/
-.header-content{
-  margin-top:25%;
-  text-align: center;
-  color:  #EFEEF5;
-}
-.header-content h1{
-  text-transform: uppercase;
-  font-size: 3em;
-  letter-spacing: 1px;
-}
-.header-content p {
-  font-size: 20px;
-  line-height: 1.5;
-  margin: 20px auto;
-}
-.header-content button{
-  width: 140px;
-  margin:20px 10px;
-  color: #591BC5;
-  font-size: 17px;
-  border:1px solid #EFEEF5;
-  font-weight: 500;
-  background: #EFEEF5;
-  border-radius: 20px;
-  padding: 10px;
-  cursor:pointer;
-  transition: .3s;
-}
-.header-content button:hover{
-  border-radius: 0;
-}
 /* Animate Background*/
 @keyframes Gradient {
   0% {
@@ -1091,6 +1048,13 @@ header h1 {
   }
 }
 
+
+/*stick light*/
 svg.svg-inline--fa.fa-sun {
   height: 40px;
+  color: rgb(102, 102, 0);
+}
+
+button.download-button {
+  color: #fff;
 }
