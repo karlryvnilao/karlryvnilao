@@ -28,9 +28,7 @@ function Training() {
     <div className='Trainings'>
           <h2>Trainings and Seminars</h2>
           <p>I actively participate in a variety of trainings and seminars to continuously
-            enhance my skills and stay updated with industry trends. These learning experiences
-            have been invaluable in my professional growth and have equipped me with the knowledge
-            and expertise to excel in my field.</p>
+            enhance my skills and stay updated with industry trends.</p>
     
     </div>
   );
